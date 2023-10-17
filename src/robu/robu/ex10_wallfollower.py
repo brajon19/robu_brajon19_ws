@@ -1,7 +1,6 @@
 import math
-def main():
+def main(args=None):
+    pass
     print('Hi from robu.')
 
 
-if __name__ == '__main__':
-    main()

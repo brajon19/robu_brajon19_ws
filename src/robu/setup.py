@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+
             'publisher = publisher_member_function:main',
             'ex10_wallfollower = robu.ex10_wallfollower:main',
             'subscriber = subscriber_member_function:main'
