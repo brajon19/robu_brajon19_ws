@@ -31,7 +31,7 @@ class WallFollowerStates(IntEnum):
     
 
 #Node
-class WallFollower(rclpy.Node):
+class WallFollower(rclpy.node.Node):
     def __init__(self):   #__ steht für private
         super().__init__('WallFollower') #super heist: die klasse darüber
         self.scan_subsciber = self.create_subscription(LaserScan, "/scan", self.scan_callback, qos_profile_sensor_data)
