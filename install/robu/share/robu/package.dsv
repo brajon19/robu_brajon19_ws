@@ -4,3 +4,6 @@ source;share/robu/hook/pythonpath.sh
 source;share/robu/hook/ament_prefix_path.ps1
 source;share/robu/hook/ament_prefix_path.dsv
 source;share/robu/hook/ament_prefix_path.sh
+source;../../build/robu/share/robu/hook/pythonpath_develop.ps1
+source;../../build/robu/share/robu/hook/pythonpath_develop.dsv
+source;../../build/robu/share/robu/hook/pythonpath_develop.sh
