@@ -1,0 +1,36 @@
+[1.483s] Invoking command in '/home/robu/work/robu_brajon19_ws/build/robu': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robu/work/robu_brajon19_ws/build/robu/build
+[2.018s] running develop
+[2.375s] Removing /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu.egg-link (link to .)
+[2.465s] Invoked command in '/home/robu/work/robu_brajon19_ws/build/robu' returned '0': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robu/work/robu_brajon19_ws/build/robu/build
+[2.473s] Invoking command in '/home/robu/work/robu_brajon19_ws/src/robu': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robu build --build-base /home/robu/work/robu_brajon19_ws/build/robu/build install --record /home/robu/work/robu_brajon19_ws/build/robu/install.log --single-version-externally-managed
+[2.937s] running egg_info
+[2.939s] writing ../../build/robu/robu.egg-info/PKG-INFO
+[2.940s] writing dependency_links to ../../build/robu/robu.egg-info/dependency_links.txt
+[2.941s] writing entry points to ../../build/robu/robu.egg-info/entry_points.txt
+[2.942s] writing requirements to ../../build/robu/robu.egg-info/requires.txt
+[2.944s] writing top-level names to ../../build/robu/robu.egg-info/top_level.txt
+[2.949s] reading manifest file '../../build/robu/robu.egg-info/SOURCES.txt'
+[2.950s] writing manifest file '../../build/robu/robu.egg-info/SOURCES.txt'
+[2.951s] running build
+[2.952s] running build_py
+[2.959s] copying robu/ex10_wallfollower.py -> /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu
+[2.960s] running install
+[2.961s] running install_lib
+[2.962s] creating /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu
+[2.962s] copying /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu/ex10_wallfollower.py -> /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu
+[2.963s] copying /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu/publisher_member_function.py -> /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu
+[2.963s] copying /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu/__init__.py -> /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu
+[2.964s] copying /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu/subscriber_member_function.py -> /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu
+[2.967s] byte-compiling /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/ex10_wallfollower.py to ex10_wallfollower.cpython-310.pyc
+[2.970s] byte-compiling /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+[2.971s] byte-compiling /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/__init__.py to __init__.cpython-310.pyc
+[2.972s] byte-compiling /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[2.973s] running install_data
+[2.974s] running install_egg_info
+[2.978s] Copying ../../build/robu/robu.egg-info to /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu-0.0.0-py3.10.egg-info
+[2.980s] running install_scripts
+[3.008s] Installing ex10_wallfollower script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[3.009s] Installing publisher script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[3.010s] Installing subscriber script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[3.011s] writing list of installed files to '/home/robu/work/robu_brajon19_ws/build/robu/install.log'
+[3.084s] Invoked command in '/home/robu/work/robu_brajon19_ws/src/robu' returned '0': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robu build --build-base /home/robu/work/robu_brajon19_ws/build/robu/build install --record /home/robu/work/robu_brajon19_ws/build/robu/install.log --single-version-externally-managed

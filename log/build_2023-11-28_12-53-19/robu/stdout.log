@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing robu.egg-info/PKG-INFO
+writing dependency_links to robu.egg-info/dependency_links.txt
+writing entry points to robu.egg-info/entry_points.txt
+writing requirements to robu.egg-info/requires.txt
+writing top-level names to robu.egg-info/top_level.txt
+reading manifest file 'robu.egg-info/SOURCES.txt'
+writing manifest file 'robu.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu.egg-link (link to .)
+Installing ex10_wallfollower script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+Installing publisher script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+Installing subscriber script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+
+Installed /home/robu/work/robu_brajon19_ws/build/robu
+running install_data

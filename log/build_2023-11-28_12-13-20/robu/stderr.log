@@ -1,0 +1,5 @@
+  File "/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/ex10_wallfollower.py", line 101
+    elif self.wallfollower_state == WallFollowerStates.WF_STATE_DRIVE2WALL
+                                                                          ^
+SyntaxError: expected ':'
+

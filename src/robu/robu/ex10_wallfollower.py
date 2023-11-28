@@ -14,13 +14,13 @@ import numpy as np
 from enum import IntEnum 
 
 ROBOT_DIRECTION_FRONT_INDEX = 0
-ROBOT_DIRECTION_RIGHT_FRONT_INDEX = 315
+ROBOT_DIRECTION_RIGHT_FRONT_INDEX = 300
 ROBOT_DIRECTION_RIGHT_INDEX = 270
-ROBOT_DIRECTION_RIGHT_REAR_INDEX = 225
+ROBOT_DIRECTION_RIGHT_REAR_INDEX = 240
 ROBOT_DIRECTION_REAR_INDEX = 180
-ROBOT_DIRECTION_LEFT_REAR_INDEX =135
+ROBOT_DIRECTION_LEFT_REAR_INDEX =120
 ROBOT_DIRECTION_LEFT_INDEX = 90
-ROBOT_DIREKTION_LEFT_FRONT_INDEX = 45
+ROBOT_DIREKTION_LEFT_FRONT_INDEX = 60
 
 
 #bestandteile der Klasse
@@ -37,7 +37,7 @@ class WallFollower(Node):
     def __init__(self):   #__ steht für private
         super().__init__('WallFollower') #super heist: die klasse darüber
         self.scan_subsciber = self.create_subscription(LaserScan, "/scan", self.scan_callback, qos_profile_sensor_data)
-        self.cmd_vel_publisher = self.create_publisher(Twist, "/cmd_vel", qos_profile_sensor_data)
+        self.cmd_vel_publisher = self.create_publisher(Twist, "/cmd_vel", 10)
 
         self.left_dist = 99999999.9 # Initialisiere die Variable auf einen ungültigen Wert
         self.front_dist = 999999999.9
@@ -55,7 +55,7 @@ class WallFollower(Node):
         self.truning_speed_wf_slow = 0.1
         self.truning_speed_wf_fast = 1.0
 
-        self.dist_trashhold_wf = 0.3
+        self.dist_treshhold_wf = 0.3
         self.dist_hysteresis_wf = 0.02
         self.vallid_lider_data = False
         self.dist_laser_offset = 0.03
@@ -98,14 +98,14 @@ class WallFollower(Node):
                 print("WF_STATE_DRIVE2WALL")
                 self.wallfollower_state = WallFollowerStates.WF_STATE_DRIVE2WALL
                 self.cmd_vel_publisher.publish(msg)
-        elif self.wallfollower_state == WallFollowerStates.WF_STATE_DRIVE2WALL
-            fd_thresh =self.dist_thrashhold_wf+self.dist_laser_offset
+        elif self.wallfollower_state == WallFollowerStates.WF_STATE_DRIVE2WALL:
+            fd_tresh =self.dist_treshhold_wf+self.dist_laser_offset
 
             forward_speed_wf = self.calc_linear_speed()
 
-            if self.front_dist > (fd_thresh +self.dist_hysteresis_wf):
+            if self.front_dist > (fd_tresh +self.dist_hysteresis_wf):
                 msg.linear.x = forward_speed_wf
-            elif self.front_dist < (fd_thresh -self.dist_hysteresis_wf):
+            elif self.front_dist < (fd_tresh -self.dist_hysteresis_wf):
                 msg.linear.x =-forward_speed_wf
             else:
                 turn_direction = self.align_front()
@@ -138,7 +138,7 @@ class WallFollower(Node):
 
         if (fl-rl) > self.dist_hysteresis_wf:
             return 1 #turning left
-        elif (fl-lf)< self.dist_hysteresis_wf:
+        elif (rl-fl)> self.dist_hysteresis_wf:
             return -1 #turning right
         else:
             return 0#aligned
@@ -149,14 +149,14 @@ class WallFollower(Node):
 
         if (fl -fr) > self.dist_hysteresis_wf:
             return 1 #turn left
-        elif (fl -fr) < self.dist_hysteresis_wf:
+        elif (fr-fl) > self.dist_hysteresis_wf:
             return -1 #turn right
         else:
             return 0#aligned
 
     def calc_linear_speed(self):
-        fd_thresh = self.dist_thresh_wf+ self.dist_laser_offset
-        if self.front_dist > (1.2 * fd_thresh):
+        fd_tresh = self.dist_treshhold_wf+ self.dist_laser_offset
+        if self.front_dist > (1.2 * fd_tresh):
             forward_speed_wf = self.forward_speed_wf_fast
         else:
             forward_speed_wf = self.forward_speed_wf_slow
