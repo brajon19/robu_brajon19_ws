@@ -1,0 +1,33 @@
+[1.334s] Invoking command in '/home/robu/work/robu_brajon19_ws/build/robu': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robu/work/robu_brajon19_ws/build/robu/build
+[1.781s] running develop
+[2.096s] Invoked command in '/home/robu/work/robu_brajon19_ws/build/robu' returned '0': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robu/work/robu_brajon19_ws/build/robu/build
+[2.097s] Invoking command in '/home/robu/work/robu_brajon19_ws/src/robu': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robu build --build-base /home/robu/work/robu_brajon19_ws/build/robu/build install --record /home/robu/work/robu_brajon19_ws/build/robu/install.log --single-version-externally-managed
+[2.541s] running egg_info
+[2.545s] writing ../../build/robu/robu.egg-info/PKG-INFO
+[2.545s] writing dependency_links to ../../build/robu/robu.egg-info/dependency_links.txt
+[2.545s] writing entry points to ../../build/robu/robu.egg-info/entry_points.txt
+[2.545s] writing requirements to ../../build/robu/robu.egg-info/requires.txt
+[2.546s] writing top-level names to ../../build/robu/robu.egg-info/top_level.txt
+[2.556s] reading manifest file '../../build/robu/robu.egg-info/SOURCES.txt'
+[2.561s] writing manifest file '../../build/robu/robu.egg-info/SOURCES.txt'
+[2.562s] running build
+[2.562s] running build_py
+[2.564s] copying robu/ex11_parameter.py -> /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu
+[2.567s] running install
+[2.568s] running install_lib
+[2.572s] copying /home/robu/work/robu_brajon19_ws/build/robu/build/lib/robu/ex11_parameter.py -> /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu
+[2.575s] /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/ex11_parameter.py:13: SyntaxWarning: 'tuple' object is not callable; perhaps you missed a comma?
+[2.575s] byte-compiling /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/ex11_parameter.py to ex11_parameter.cpython-310.pyc
+[2.575s]   ('forward_speed_wf_fast' , 0.1)
+[2.577s] running install_data
+[2.579s] running install_egg_info
+[2.584s] removing '/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu-0.0.0-py3.10.egg-info' (and everything under it)
+[2.594s] Copying ../../build/robu/robu.egg-info to /home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu-0.0.0-py3.10.egg-info
+[2.594s] running install_scripts
+[2.623s] Installing ex10_wallfollower script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[2.624s] Installing ex10_wallfollowerly script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[2.625s] Installing myparameter script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[2.626s] Installing publisher script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[2.627s] Installing subscriber script to /home/robu/work/robu_brajon19_ws/install/robu/lib/robu
+[2.628s] writing list of installed files to '/home/robu/work/robu_brajon19_ws/build/robu/install.log'
+[2.704s] Invoked command in '/home/robu/work/robu_brajon19_ws/src/robu' returned '0': PYTHONPATH=/home/robu/work/robu_brajon19_ws/build/robu/prefix_override:/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robu build --build-base /home/robu/work/robu_brajon19_ws/build/robu/build install --record /home/robu/work/robu_brajon19_ws/build/robu/install.log --single-version-externally-managed

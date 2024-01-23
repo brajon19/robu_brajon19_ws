@@ -1,0 +1,2 @@
+/home/robu/work/robu_brajon19_ws/install/robu/lib/python3.10/site-packages/robu/ex11_parameter.py:13: SyntaxWarning: 'tuple' object is not callable; perhaps you missed a comma?
+  ('forward_speed_wf_fast' , 0.1)

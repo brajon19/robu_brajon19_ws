@@ -24,6 +24,7 @@ setup(
             'publisher = publisher_member_function:main',
             'ex10_wallfollower = robu.ex10_wallfollower:main',
             'ex10_wallfollowerly = robu.ex10_wallfollower_ly:main',
+            'myparameter = robu.ex11_parameter:main', 
             'subscriber = subscriber_member_function:main'
         ],
     },
